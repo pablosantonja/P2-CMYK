@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#espai{
+			height: 3000px;
+			width: 30px;
+			background: aqua;
+		}
+		p:hover span{
+			display: none;
+		}
+		#dalt{
+			background: orange;
+			float: left;
+		}
+		p{
+			font-size: 100px;
+		}
+		#contenidor{
+			position: relative;
+		}
+		#contenidor img{
+			display: none;
+			position: absolute;
+			z-index: -5;
+			top: -100px;
+		}
+		#contenidor:hover img{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<a href="#baix"><p id="dalt"><span>h</span>ola</p></a>
+<div id="espai"></div>
+<div id="contenidor">
+	<a href="#dalt"><p id="baix">adeu</p></a>
+	<img src="../images/1_02.png">
+	</div>
+</body>
+</html>
